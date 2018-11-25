@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*引入头部样式*/
+@import "header.css";
+
+/*引入自定义字体*/
+@font-face{
+font-family: "fFZQKBYS";
+	src: url('../fonts/方正清刻本悦宋简体.ttf');
+	font-weight: normal;
+}
+
+body{
+	text-align: center;
+	padding: 0;
+	margin: 0;       /*清空页面自身的边距*/
+}
+
+/*所有页面的段落格式*/
+p {
+	font-family: "fFZQKBYS";
+	font-size:20px;
+	text-indent: 40px;
+	line-height: 28px;
+	text-align:justify;
+	letter-spacing:2px;
+}
+
+/*设置除首页外的pages里的banner图格式*/
+.banner{
+	text-align: center;
+	margin: auto;
+	padding: 20px 0;
+	width: 70%;
+}
+.banner img{
+	width: 100%;
+}
+/*页面内容部分页宽*/
+.content{
+	width: 70%;
+	margin: auto;
+}
+
+/*内容区标题*/
+.content-title{
+	padding-top: 25px;
+}
+.content-title img{
+	width: 100%;
+}
+
+/*内容区文本以及图片*/
+.content-text img{
+	max-width: 100%;
+	max-height: 300px;
+}
+/*图文混排图片浮动*/
+.img-float-left {
+padding: 20px;
+float: left;
+}
+.img-float-right {
+padding: 20px;
+float: right;
+}
+
+/*视频自适应大小*/
+.video-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 56.25%;
+	height: 0
+}
+.video-container iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+.video-container embed{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
